@@ -47,15 +47,69 @@ body {
 }
 
 .image-gallery a i{
-    /* color: rgba(255, 255, 255, 0.6); */
+    color: rgba(255,255,255, .6);
     font-size: 3rem;
     position: relative;
-    z-index: 100;
+    z-index: 150;
     padding: 1rem 3rem;
-    border: 2px solid rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(255, 255, 255, .6);
     border-radius: .4rem;
-    /* opacity: 0; */
+    opacity: 0;
     transition: 0.5s;
 }
 
-.image-gallery a::before
+.image-gallery a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: 0.5s;
+}
+.image-gallery a:hover i,
+.image-gallery a:hover::before{
+    opacity: 1;
+}
+
+.img01 {
+    grid-area: img01;
+    background-image: url(images/img01.jpg);
+}
+
+.img02 {
+    grid-area: img02;
+    background-image: url(images/img02.jpg);
+}
+
+.img03 {
+    grid-area: img03;
+    background-image: url(images/img03.jpg);
+}
+
+.img04 {
+    grid-area: img04;
+    background-image: url(images/img04.jpg);
+}
+
+.img05 {
+    grid-area: img05;
+    background-image: url(images/img05.jpg);
+}
+
+.img06 {
+    grid-area: img06;
+    background-image: url(images/img06.jpg);
+}
+
+.img07 {
+    grid-area: img07;
+    background-image: url(images/img07.jpg);
+}
+
+.img08 {
+    grid-area: img08;
+    background-image: url(images/img08.jpg);
+}
