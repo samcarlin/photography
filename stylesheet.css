@@ -30,7 +30,9 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 1.5rem;
-    /* grid-template-areas: ; */
+    grid-template-areas: 'img01 img02 img03 img03'
+                         'img01 img04 img05 img06'
+                         'img07 img07 img08 img06';
 }
 
 .image-gallery a {
@@ -76,6 +78,7 @@ body {
 
 .img01 {
     grid-area: img01;
+    min-height: 51.5rem;
     background-image: url(images/img01.jpg);
 }
 
@@ -101,6 +104,7 @@ body {
 
 .img06 {
     grid-area: img06;
+    min-height: 51.5rem;
     background-image: url(images/img06.jpg);
 }
 
@@ -112,4 +116,14 @@ body {
 .img08 {
     grid-area: img08;
     background-image: url(images/img08.jpg);
+}
+
+@media screen and (max-width:900px) {
+    .image-gallery {
+        grid-template-areas: 'img01 img01 img02 img02'
+                             'img01 img01 img03 img03'
+                             'img07 img07 img08 img06';
+
+    }
+
 }
