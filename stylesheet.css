@@ -118,12 +118,50 @@ body {
     background-image: url(images/img08.jpg);
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
     .image-gallery {
         grid-template-areas: 'img01 img01 img02 img02'
                              'img01 img01 img03 img03'
-                             'img07 img07 img08 img06';
+                             'img04 img04 img05 img05'
+                             'img06 img07 img07 img07'
+                             'img08 img08 img08 img08';
 
     }
+
+    .image-gallery a{
+        height: 20rem;
+    }
+
+    .img01 {
+        min-height: 41.5rem;
+    }
+
+    .img06 {
+        min-height: 20rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .image-gallery {
+        grid-template-areas: 'img01 img01 img01 img01'
+                             'img02 img02 img02 img02'
+                             'img03 img03 img03 img03'
+                             'img04 img04 img04 img04'
+                             'img05 img05 img05 img05'
+                             'img06 img06 img06 img06'
+                             'img07 img07 img07 img07'
+                             'img08 img08 img08 img08';
+
+    }
+
+    .image-gallery a, 
+    .img01,
+    .img06 {
+        min-height: 30rem;
+        height: 30rem;
+    }
+
+   
 
 }
